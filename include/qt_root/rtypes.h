@@ -12,6 +12,9 @@
 
 #ifndef QT_ROOT_REPLACEMENT_INCLUDE_QT_ROOT_RTYPES_H
 #define QT_ROOT_REPLACEMENT_INCLUDE_QT_ROOT_RTYPES_H
+
+#include <qt_root/internal_header.h>
+
 #ifdef PITZ_EMWIZ_ROOT_NOT_USED
 
 
