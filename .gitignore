@@ -1,32 +1,54 @@
-# Prerequisites
-*.d
-
-# Compiled Object files
-*.slo
-*.lo
-*.o
+*.[oa]
+*~
 *.obj
+*.so*
 
-# Precompiled Headers
-*.gch
-*.pch
+# all this makefiles one can generate from 
+# qt pro files located in the same directory
 
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
+# this is files created by IDE (or qtcreator or visual studion)
+*.pro.back
+*.pro.user
 
-# Fortran module files
-*.mod
-*.smod
+# moc_*.cpp
+# moc_*.h
 
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
+#/sys
+/build/output/*
 
-# Executables
-*.exe
-*.out
-*.app
+*.qmake.stash
+/*/prj/*Makefile*
+/build/build_dk/Makefile
+
+# /*/prj/ui_*.h
+# /.tests
+# /*/prj/output
+
+# /workspaces/*/*
+# !/workspaces/*qt/*.pro
+# !/workspaces/*qt/*.pri
+
+# build-*
+
+# a good file /build/emwiz-buildconfig.pri should be available in repo which 
+# builds debug version when freshly cloned, just updates of file when
+# switching between debug/release should not be part of git tracking
+/build/emwiz_buildconfig.pri
+
+# remove build artifact created via linux_create_relese.bash
+/build/build_swe/emwiz*/*
+
+/build/build_swe/vs-sln-emwiz-vs2015-vgdb/.visualgdb/*
+/build/build_swe/vs-sln-emwiz-vs2015-vgdb/.vs/*
+
+EMWiz.VC.db
+EmCalc/prj/build
+RootPlot/prj/build
+FastScan/prj/build
+MemoryWatcher/prj/build
+/sys
+/workspaces/qt
+/qt/build
+deploy/
+/build/out
+
