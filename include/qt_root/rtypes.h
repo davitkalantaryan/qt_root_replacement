@@ -24,5 +24,17 @@ typedef int Int_t;
 #endif
 
 
+#if !defined(Double_t_defined) && !defined(Double_t)
+typedef double Double_t;
+#define Double_t_defined
+#endif
+
+
+#if !defined(Option_t_defined) && !defined(Option_t)
+typedef const char Option_t;
+#define Option_t_defined
+#endif
+
+
 #endif  //  #ifdef PITZ_EMWIZ_ROOT_NOT_USED
 #endif  //  #ifndef QT_ROOT_REPLACEMENT_INCLUDE_QT_ROOT_RTYPES_H
